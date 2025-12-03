@@ -11,5 +11,6 @@ public class BalkanExpansion implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+
 	}
 }
