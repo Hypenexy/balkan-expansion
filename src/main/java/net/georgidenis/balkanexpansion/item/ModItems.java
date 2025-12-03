@@ -14,7 +14,7 @@ import net.minecraft.util.Identifier;
 public class ModItems {
     public static final Item DONER = registerItem("doner", new Item(new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(BalkanExpansion.MOD_ID, "doner")))));
     public static final Item LAPIS_SWORD = registerItem("lapis_sword", new Item(new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(BalkanExpansion.MOD_ID, "lapis_sword")))));
-    public static final Item BRONZE_ORE = registerItem("bronze_ore", new Item(new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(BalkanExpansion.MOD_ID, "bronze_ore")))));
+    public static final Item RAW_BRONZE = registerItem("raw_bronze", new Item(new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(BalkanExpansion.MOD_ID, "raw_bronze")))));
     public static final Item BRONZE_HELMET = registerItem("bronze_helmet", new Item(new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(BalkanExpansion.MOD_ID, "bronze_helmet")))));
     public static final Item NECROMANCER_SCROLL = registerItem("necromancer_scroll", new Item(new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(BalkanExpansion.MOD_ID, "necromancer_scroll")))));
 
@@ -31,7 +31,7 @@ public class ModItems {
             entries.add(LAPIS_SWORD);
             entries.add(NECROMANCER_SCROLL);
 
-            entries.add(BRONZE_ORE);
+            entries.add(RAW_BRONZE);
             entries.add(BRONZE_HELMET);
         });
 

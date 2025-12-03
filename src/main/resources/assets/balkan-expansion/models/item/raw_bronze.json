@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "balkan-expansion:item/bronze_ore"
+    "layer0": "balkan-expansion:item/raw_bronze"
   }
 }

@@ -20,7 +20,7 @@ public class ModItemGroups {
                         entries.add(ModItems.NECROMANCER_SCROLL);
 
                         entries.add(ModItems.BRONZE_HELMET);
-                        entries.add(ModItems.BRONZE_ORE);
+                        entries.add(ModItems.RAW_BRONZE);
                     }).build());
 
     public static void registerItemGroups(){
