@@ -6,11 +6,12 @@ import net.minecraft.item.ItemGroups;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.item.Item;
+import net.minecraft.registry.RegistryKey;
+import net.minecraft.registry.RegistryKeys;
 import net.minecraft.util.Identifier;
 
 public class ModItems {
-
-    public static final Item Doner = registerItem("doner", new Item(new Item.Settings()));
+    public static final Item DONER = registerItem("doner", new Item(new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(BalkanExpansion.MOD_ID,"doner")))));
 
     private static Item registerItem(String name, Item item){
         return Registry.register(Registries.ITEM, Identifier.of(BalkanExpansion.MOD_ID, name), item);
@@ -20,7 +21,7 @@ public class ModItems {
         BalkanExpansion.LOGGER.info("Registering Mod Items for " + BalkanExpansion.MOD_ID);
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {
-            entries.add(Doner);
+            entries.add(DONER);
         });
     }
 }
