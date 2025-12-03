@@ -17,6 +17,7 @@ public class ModItemGroups {
                     .entries((displayContext, entries) -> {
                         entries.add(ModItems.DONER);
                         entries.add(ModItems.LAPIS_SWORD);
+                        entries.add(ModItems.NECROMANCER_SCROLL);
                     }).build());
 
     public static void registerItemGroups(){
