@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:baked_potato",
+    "minecraft:cooked_porkchop",
+    "minecraft:bread",
+    "minecraft:paper"
+  ],
+  "result": {
+    "count": 1,
+    "id": "balkan-expansion:doner"
+  }
+}

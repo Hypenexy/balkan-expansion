@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "L": "minecraft:lapis_lazuli",
+    "G": "minecraft:gold_block",
+    "D": "minecraft:diamond",
+    "I": "minecraft:gold_ingot"
+  },
+  "pattern": [
+    " L ",
+    "GDG",
+    " I "
+  ],
+  "result": {
+    "count": 1,
+    "id": "balkan-expansion:lapis_sword"
+  }
+}
