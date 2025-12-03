@@ -3,15 +3,16 @@
 	"id": "balkan-expansion",
 	"version": "${version}",
 	"name": "Balkan Expansion",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "A Balkan-themed expansion featuring new regions, folklore creatures, architecture, and traditional items.",
 	"authors": [
-		"Me!"
+		"Georgi",
+        "Denis"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://midelight.net/",
+		"sources": "https://github.com/Hypenexy/balkan-expansion"
 	},
-	"license": "CC0-1.0",
+	"license": "MIT",
 	"icon": "assets/balkan-expansion/icon.png",
 	"environment": "*",
 	"entrypoints": {
@@ -20,7 +21,10 @@
 		],
 		"fabric-datagen": [
 			"net.georgidenis.balkanexpansion.BalkanExpansionDataGenerator"
-		]
+		],
+        "client": [
+            "net.georgidenis.balkanexpansion.BalkanExpansionClient"
+        ]
 	},
 	"mixins": [
 		"balkan-expansion.mixins.json"
