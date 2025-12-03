@@ -17,6 +17,8 @@ public class ModItemGroups {
                     .entries((displayContext, entries) -> {
                         entries.add(ModItems.DONER);
                         entries.add(ModItems.LAPIS_SWORD);
+                        entries.add(ModItems.BRONZE_ORE);
+                        entries.add(ModItems.BRONZE_HELMET);
                     }).build());
 
     public static void registerItemGroups(){

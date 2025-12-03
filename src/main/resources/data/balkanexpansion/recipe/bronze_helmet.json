@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key":
+  {
+       "A": "balkan-expansion:bronze_ore",
+       "B": "minecraft:leather"
+  },
+  "pattern":
+  [
+    "AAA",
+    "ABA",
+    "B B"
+
+  ],
+  "result": {
+    "count": 1,
+    "id": "balkan-expansion:bronze_helmet"
+  }
+
+
+
+
+
+
+
+
+
+
+}
