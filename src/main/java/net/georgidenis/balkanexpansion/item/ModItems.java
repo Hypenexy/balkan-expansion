@@ -27,10 +27,12 @@ public class ModItems {
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {
             entries.add(DONER);
+
             entries.add(LAPIS_SWORD);
+            entries.add(NECROMANCER_SCROLL);
+
             entries.add(BRONZE_ORE);
             entries.add(BRONZE_HELMET);
-            entries.add(NECROMANCER_SCROLL);
         });
 
 

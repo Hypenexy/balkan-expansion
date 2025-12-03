@@ -18,6 +18,9 @@ public class ModItemGroups {
                         entries.add(ModItems.DONER);
                         entries.add(ModItems.LAPIS_SWORD);
                         entries.add(ModItems.NECROMANCER_SCROLL);
+
+                        entries.add(ModItems.BRONZE_HELMET);
+                        entries.add(ModItems.BRONZE_ORE);
                     }).build());
 
     public static void registerItemGroups(){
