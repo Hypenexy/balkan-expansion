@@ -1,4 +1,4 @@
-package net.georgidenis;
+package net.georgidenis.balkanexpansion;
 
 import net.fabricmc.api.ModInitializer;
 

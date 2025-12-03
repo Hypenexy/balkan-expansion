@@ -1,4 +1,4 @@
-package net.georgidenis.mixin;
+package net.georgidenis.balkanexpansion.mixin;
 
 import net.minecraft.server.MinecraftServer;
 import org.spongepowered.asm.mixin.Mixin;

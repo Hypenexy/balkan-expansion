@@ -1,6 +1,6 @@
 {
 	"required": true,
-	"package": "net.georgidenis.mixin",
+	"package": "net.georgidenis.balkanexpansion.mixin",
 	"compatibilityLevel": "JAVA_21",
 	"mixins": [
 		"ExampleMixin"
