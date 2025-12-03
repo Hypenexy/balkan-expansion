@@ -3,6 +3,7 @@ package net.georgidenis.balkanexpansion.item;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.fabricmc.fabric.api.registry.FuelRegistryEvents;
 import net.georgidenis.balkanexpansion.BalkanExpansion;
+import net.georgidenis.balkanexpansion.block.ModBlocks;
 import net.minecraft.item.ItemGroups;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -26,13 +27,21 @@ public class ModItems {
         BalkanExpansion.LOGGER.info("Registering Mod Items for " + BalkanExpansion.MOD_ID);
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {
-            entries.add(DONER);
-
-            entries.add(LAPIS_SWORD);
-            entries.add(NECROMANCER_SCROLL);
-
             entries.add(RAW_BRONZE);
+
+
+//            entries.add(ModBlocks.KEBAB_MASTER);
+        });
+
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT).register(entries -> {
+            entries.add(LAPIS_SWORD);
             entries.add(BRONZE_HELMET);
+        });
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.SPAWN_EGGS).register(entries -> {
+            entries.add(NECROMANCER_SCROLL);
+        });
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK).register(entries -> {
+            entries.add(DONER);
         });
 
 
