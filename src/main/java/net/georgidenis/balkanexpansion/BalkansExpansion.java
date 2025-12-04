@@ -1,5 +1,7 @@
 package net.georgidenis.balkanexpansion;
 
+import net.georgidenis.balkanexpansion.item.ModItems;
+import net.minecraft.world.item.CreativeModeTabs;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -32,6 +34,9 @@ public class BalkansExpansion {
         // Do not add this line if there are no @SubscribeEvent-annotated functions in this class, like onServerStarting() below.
         NeoForge.EVENT_BUS.register(this);
 
+        // Adding the register in our main folder
+        ModItems.register(modEventBus);
+
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
 
@@ -45,7 +50,10 @@ public class BalkansExpansion {
 
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
-
+        // Added the doner to the creative mod tab for food
+        if(event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS){
+            event.accept(ModItems.DONER);
+        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
