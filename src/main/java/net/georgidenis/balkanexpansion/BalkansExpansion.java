@@ -61,6 +61,10 @@ public class BalkansExpansion {
         if(event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES){
             event.accept(ModItems.NECROMANCER_SCROLL);
         }
+
+        if(event.getTabKey() == CreativeModeTabs.COMBAT){
+            event.accept(ModItems.LAPIS_SWORD.get());
+        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
