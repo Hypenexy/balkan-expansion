@@ -1,0 +1,13 @@
+{
+  "itemGroup.balkansexpansion": "Example Mod Tab",
+  "block.balkansexpansion.example_block": "Example Block",
+  "item.balkansexpansion.example_item": "Example Item",
+
+  "balkansexpansion.configuration.title": "Balkans Expansion Configs",
+  "balkansexpansion.configuration.section.balkansexpansion.common.toml": "Balkans Expansion Configs",
+  "balkansexpansion.configuration.section.balkansexpansion.common.toml.title": "Balkans Expansion Configs",
+  "balkansexpansion.configuration.items": "Item List",
+  "balkansexpansion.configuration.logDirtBlock": "Log Dirt Block",
+  "balkansexpansion.configuration.magicNumberIntroduction": "Magic Number Text",
+  "balkansexpansion.configuration.magicNumber": "Magic Number"
+}
