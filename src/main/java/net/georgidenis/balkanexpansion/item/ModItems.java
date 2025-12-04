@@ -29,8 +29,8 @@ public class ModItems {
             new Item.Properties().attributes(
                     LapisSword.createAttributes(
                             NETHERITE, // Must match the tier used in the constructor
-                            3.0f,    // Base attack damage bonus for swords
-                            1.5f     // Base attack speed bonus for swords
+                            1.0f,    // Base attack damage bonus for swords
+                            -1.6f     // Base attack speed bonus for swords // Nerfed by georgi
                     )
             )
     ));

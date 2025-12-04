@@ -3,7 +3,8 @@
   "item.balkansexpansion.lapis_sword": "Lapis Sword",
   "item.balkansexpansion.necromancer_scroll": "Necromancer's Scroll",
 
-  "item.balkansexpansion.bronze_ore": "Bronze Ore",
+  "block.balkansexpansion.bronze_ore": "Bronze Ore",
+  "item.balkansexpansion.raw_bronze": "Raw bronze",
   "item.balkansexpansion.bronze_helmet": "Bronze Helmet",
 
   "block.balkansexpansion.kebab_master": "Kebab Master",

@@ -1,7 +1,9 @@
 package net.georgidenis.balkanexpansion;
 
+import net.georgidenis.balkanexpansion.block.ModBlocks;
 import net.georgidenis.balkanexpansion.item.ModCreativeTab;
 import net.georgidenis.balkanexpansion.item.ModItems;
+import net.georgidenis.balkanexpansion.villager.ModVillagers;
 import net.minecraft.world.item.CreativeModeTabs;
 import org.slf4j.Logger;
 
@@ -40,9 +42,13 @@ public class BalkansExpansion {
 
         // Adding the register in our main folder
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
+
+        // Villagers
+        ModVillagers.register(modEventBus);
 
         // Register our mod's ModConfigSpec so that FML can create and load the config file for us
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
@@ -61,9 +67,14 @@ public class BalkansExpansion {
         if(event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES){
             event.accept(ModItems.NECROMANCER_SCROLL);
         }
-
         if(event.getTabKey() == CreativeModeTabs.COMBAT){
             event.accept(ModItems.LAPIS_SWORD.get());
+        }
+        if(event.getTabKey() == CreativeModeTabs.FUNCTIONAL_BLOCKS){
+            event.accept(ModBlocks.KEBAB_MASTER);
+        }
+        if(event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS){
+            event.accept(ModBlocks.BRONZE_ORE);
         }
     }
 
