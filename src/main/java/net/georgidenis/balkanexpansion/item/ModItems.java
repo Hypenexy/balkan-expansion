@@ -18,7 +18,7 @@ public class ModItems {
 
     // Registers the item and sets its name: that is used for us to call it
     public static final DeferredItem<Item> DONER = ITEMS.register("doner",
-            () -> new Item(new Item.Properties()));
+            () -> new Item(new Item.Properties().food(ModFoodProperty.DONER)));
 
     public static final DeferredItem<Item> NECROMANCER_SCROLL = ITEMS.register("necromancer_scroll",
             () -> new Item(new Item.Properties()));
