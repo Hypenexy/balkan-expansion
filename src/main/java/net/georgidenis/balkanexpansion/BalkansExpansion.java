@@ -54,6 +54,9 @@ public class BalkansExpansion {
         if(event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS){
             event.accept(ModItems.DONER);
         }
+        if(event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES){
+            event.accept(ModItems.NECROMANCER_SCROLL);
+        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call

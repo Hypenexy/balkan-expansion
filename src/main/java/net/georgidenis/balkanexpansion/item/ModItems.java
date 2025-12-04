@@ -14,6 +14,9 @@ public class ModItems {
     public static final DeferredItem<Item> DONER = ITEMS.register("doner",
             () -> new Item(new Item.Properties()));
 
+    public static final DeferredItem<Item> NECROMANCER_SCROLL = ITEMS.register("necromancer_scroll",
+            () -> new Item(new Item.Properties()));
+
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);
     }
