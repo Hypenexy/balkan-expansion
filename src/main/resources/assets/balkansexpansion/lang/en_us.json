@@ -1,4 +1,18 @@
 {
-  "item.balkansexpansion.doner": "Doner",
-  "item.balkansexpansion.necromancer_scroll": "Necromancer Scroll"
+  "item.balkansexpansion.doner": "Döner",
+  "item.balkansexpansion.lapis_sword": "Lapis Sword",
+  "item.balkansexpansion.necromancer_scroll": "Necromancer's Scroll",
+
+  "item.balkansexpansion.bronze_ore": "Bronze Ore",
+  "item.balkansexpansion.bronze_helmet": "Bronze Helmet",
+
+  "block.balkansexpansion.kebab_master": "Kebab Master",
+
+  "itemgroup.balkansexpansion.the_balkans_items": "The Balkans' Items",
+
+
+  "painting.balkansexpansion.gyroman_menu.title": "Gyroman Menu",
+  "painting.balkansexpansion.gyroman_menu.author": "Georgi Murlev",
+  "painting.balkansexpansion.gyroman_second_menu.title": "Gyroman Second Menu",
+  "painting.balkansexpansion.gyroman_second_menu.author": "Georgi Murlev"
 }

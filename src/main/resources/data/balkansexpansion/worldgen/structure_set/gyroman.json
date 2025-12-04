@@ -1,0 +1,17 @@
+{
+  "structures": [
+    {
+      "structure": "balkansexpansion:gyroman",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+
+    "salt": 1692761362,
+
+    "spacing": 12,
+
+    "separation": 4
+  }
+}
