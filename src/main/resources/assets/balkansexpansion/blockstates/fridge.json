@@ -1,0 +1,35 @@
+{
+  "variants": {
+    "": { "model": "balkansexpansion:block/fridge" },
+    "facing=north": {
+      "model": "balkansexpansion:block/fridge"
+    },
+    "facing=south": {
+      "model": "balkansexpansion:block/fridge",
+      "y": 180
+    },
+    "facing=east": {
+      "model": "balkansexpansion:block/fridge",
+      "y": 90
+    },
+    "facing=west": {
+      "model": "balkansexpansion:block/fridge",
+      "y": 270
+    },
+    "horizontal_facing=north": {
+      "model": "balkansexpansion:block/fridge"
+    },
+    "horizontal_facing=south": {
+      "model": "balkansexpansion:block/fridge",
+      "y": 180
+    },
+    "horizontal_facing=east": {
+      "model": "balkansexpansion:block/fridge",
+      "y": 90
+    },
+    "horizontal_facing=west": {
+      "model": "balkansexpansion:block/fridge",
+      "y": 270
+    }
+  }
+}

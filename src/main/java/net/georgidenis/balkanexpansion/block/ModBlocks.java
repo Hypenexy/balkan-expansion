@@ -6,6 +6,7 @@ import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.ChainBlock;
 import net.minecraft.world.level.block.DropExperienceBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -36,6 +37,11 @@ public class ModBlocks {
                             .sound(SoundType.COPPER)
             ));
 
+    public static final DeferredBlock<Block> FRIDGE = registerBlock("fridge",
+            () -> new ChainBlock(BlockBehaviour.Properties.of()
+                    .instabreak()
+            )
+    );
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);
