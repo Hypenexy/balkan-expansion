@@ -1,0 +1,17 @@
+{
+  "structures": [
+    {
+      "structure": "balkansexpansion:restaurant",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+
+    "salt": 1690321310,
+
+    "spacing": 12,
+
+    "separation": 4
+  }
+}
