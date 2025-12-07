@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "balkansexpansion:item/friendly_skeleton_spawn_egg"
+  }
+}

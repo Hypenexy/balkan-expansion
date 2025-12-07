@@ -1,10 +1,13 @@
 package net.georgidenis.balkanexpansion.item;
 
 import net.georgidenis.balkanexpansion.BalkansExpansion;
+import net.georgidenis.balkanexpansion.entity.ModEntities;
 import net.georgidenis.balkanexpansion.item.custom.LapisSword;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.SpawnEggItem;
 import net.minecraft.world.item.SwordItem;
 import net.neoforged.bus.api.IEventBus;
+import net.neoforged.neoforge.common.DeferredSpawnEggItem;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
@@ -34,6 +37,10 @@ public class ModItems {
                     )
             )
     ));
+
+    public static final DeferredItem<Item> FRIENDLY_SKELETON_SPAWN_EGG = ITEMS.register("friendly_skeleton_spawn_egg",
+            () -> new DeferredSpawnEggItem(ModEntities.FRIENDLY_SKELETON, 0x31afaf, 0xffac00,
+                    new Item.Properties()));
 
 
     public static void register(IEventBus eventBus){

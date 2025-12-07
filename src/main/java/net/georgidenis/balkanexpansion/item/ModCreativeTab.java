@@ -25,6 +25,7 @@ public class ModCreativeTab {
                         output.accept(ModItems.NECROMANCER_SCROLL);
                         output.accept(ModBlocks.BRONZE_ORE);
                         output.accept(ModBlocks.FRIDGE.get());
+                        output.accept(ModItems.FRIENDLY_SKELETON_SPAWN_EGG);
                     }).build());
 
     public static void register(IEventBus eventBus){

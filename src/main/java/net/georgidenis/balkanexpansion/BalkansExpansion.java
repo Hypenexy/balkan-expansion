@@ -1,6 +1,7 @@
 package net.georgidenis.balkanexpansion;
 
 import net.georgidenis.balkanexpansion.block.ModBlocks;
+import net.georgidenis.balkanexpansion.entity.ModEntities;
 import net.georgidenis.balkanexpansion.item.ModCreativeTab;
 import net.georgidenis.balkanexpansion.item.ModItems;
 import net.georgidenis.balkanexpansion.villager.ModVillagers;
@@ -49,6 +50,9 @@ public class BalkansExpansion {
 
         // Villagers
         ModVillagers.register(modEventBus);
+
+        // For Adding Entities or Mobs
+        ModEntities.register(modEventBus);
 
         // Register our mod's ModConfigSpec so that FML can create and load the config file for us
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);

@@ -2,6 +2,7 @@
   "item.balkansexpansion.doner": "Döner",
   "item.balkansexpansion.lapis_sword": "Lapis Sword",
   "item.balkansexpansion.necromancer_scroll": "Necromancer's Scroll",
+  "item.balkansexpansion.friendly_skeleton_spawn_egg": "Friendly Skeleton Egg",
 
   "block.balkansexpansion.bronze_ore": "Bronze Ore",
   "item.balkansexpansion.raw_bronze": "Raw bronze",
@@ -16,5 +17,7 @@
   "painting.balkansexpansion.gyroman_menu.title": "Gyroman Menu",
   "painting.balkansexpansion.gyroman_menu.author": "Georgi Murlev",
   "painting.balkansexpansion.gyroman_second_menu.title": "Gyroman Second Menu",
-  "painting.balkansexpansion.gyroman_second_menu.author": "Georgi Murlev"
+  "painting.balkansexpansion.gyroman_second_menu.author": "Georgi Murlev",
+
+  "entity.balkansexpansion.friendly_skeleton": "Friendly Skeleton"
 }
