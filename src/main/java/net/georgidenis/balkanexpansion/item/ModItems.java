@@ -3,6 +3,7 @@ package net.georgidenis.balkanexpansion.item;
 import net.georgidenis.balkanexpansion.BalkansExpansion;
 import net.georgidenis.balkanexpansion.entity.ModEntities;
 import net.georgidenis.balkanexpansion.item.custom.LapisSword;
+import net.georgidenis.balkanexpansion.item.custom.NecromancerScroll;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.SpawnEggItem;
 import net.minecraft.world.item.SwordItem;
@@ -23,8 +24,8 @@ public class ModItems {
     public static final DeferredItem<Item> DONER = ITEMS.register("doner",
             () -> new Item(new Item.Properties().food(ModFoodProperty.DONER)));
 
-    public static final DeferredItem<Item> NECROMANCER_SCROLL = ITEMS.register("necromancer_scroll",
-            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<NecromancerScroll> NECROMANCER_SCROLL = ITEMS.register("necromancer_scroll",
+            () -> new NecromancerScroll(new NecromancerScroll.Properties()));
 
     // Assuming ITEMS is a DeferredRegister<Item>
     public static final Supplier<LapisSword> LAPIS_SWORD = ITEMS.register("lapis_sword", () -> new LapisSword(

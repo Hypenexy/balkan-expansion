@@ -26,6 +26,9 @@ package net.georgidenis.balkanexpansion.entity.client;
 
 import net.georgidenis.balkanexpansion.BalkansExpansion;
 import net.georgidenis.balkanexpansion.entity.ModEntities;
+import net.minecraft.client.model.SkeletonModel;
+import net.minecraft.client.model.geom.ModelLayers;
+import net.minecraft.client.renderer.entity.HumanoidMobRenderer;
 import net.minecraft.client.renderer.entity.SkeletonRenderer;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;
@@ -38,6 +41,7 @@ public final class ModEntityRenderers {
     @SubscribeEvent
     public static void onRegisterRenderers(EntityRenderersEvent.RegisterRenderers event) {
         // register renderer using the registered entity type
-        event.registerEntityRenderer(ModEntities.FRIENDLY_SKELETON.get(), SkeletonRenderer::new);
+        event.registerEntityRenderer(ModEntities.FRIENDLY_SKELETON.get(),
+                FriendlySkeletonRenderer::new);
     }
 }
