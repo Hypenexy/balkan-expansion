@@ -36,10 +36,10 @@ public class FriendlySkeleton extends TamableAnimal {
     //Stats for the mob
     public static AttributeSupplier.Builder createAttributes() {
         return TamableAnimal.createLivingAttributes()
-                .add(Attributes.MAX_HEALTH, 20.0D)
+                .add(Attributes.MAX_HEALTH, 40.0D)
                 .add(Attributes.MOVEMENT_SPEED, 0.25D)
-                .add(Attributes.ATTACK_DAMAGE, 3.0D)
-                .add(Attributes.FOLLOW_RANGE, 32.0D);
+                .add(Attributes.ATTACK_DAMAGE, 5.0D)
+                .add(Attributes.FOLLOW_RANGE, 62.0D);
     }
 
     // attacks only hostile mobs
@@ -126,7 +126,7 @@ public class FriendlySkeleton extends TamableAnimal {
                 }
             }
         }
-        //if it doesnt work it just doesnt do anything
+        //if it doesn't work it just doesn't do anything
         return InteractionResult.FAIL;
     }
 
