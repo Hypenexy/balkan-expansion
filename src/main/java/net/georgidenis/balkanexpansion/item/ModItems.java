@@ -4,6 +4,7 @@ import net.georgidenis.balkanexpansion.BalkansExpansion;
 import net.georgidenis.balkanexpansion.entity.ModEntities;
 import net.georgidenis.balkanexpansion.item.custom.LapisSword;
 import net.georgidenis.balkanexpansion.item.custom.NecromancerScroll;
+import net.georgidenis.balkanexpansion.item.util.ModToolTiers;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.SpawnEggItem;
 import net.minecraft.world.item.SwordItem;
@@ -28,16 +29,18 @@ public class ModItems {
             () -> new NecromancerScroll(new NecromancerScroll.Properties()));
 
     // Assuming ITEMS is a DeferredRegister<Item>
-    public static final Supplier<LapisSword> LAPIS_SWORD = ITEMS.register("lapis_sword", () -> new LapisSword(
-            NETHERITE, // Your custom or vanilla Tier object
-            new Item.Properties().attributes(
-                    LapisSword.createAttributes(
-                            NETHERITE, // Must match the tier used in the constructor
-                            1.0f,    // Base attack damage bonus for swords
-                            -1.6f     // Base attack speed bonus for swords // Nerfed by georgi
+    public static final Supplier<LapisSword> LAPIS_SWORD = ITEMS.register("lapis_sword",
+            () -> new LapisSword(
+                    ModToolTiers.LAPIS, // Your custom tier
+                    new Item.Properties().attributes(
+                            LapisSword.createAttributes(
+                                    ModToolTiers.LAPIS, // Must match tier above
+                                    1.0f,   // Attack damage bonus
+                                    -1.6f   // Attack speed
+                            )
                     )
             )
-    ));
+    );
 
     public static final DeferredItem<Item> FRIENDLY_SKELETON_SPAWN_EGG = ITEMS.register("friendly_skeleton_spawn_egg",
             () -> new DeferredSpawnEggItem(ModEntities.FRIENDLY_SKELETON, 0x31afaf, 0xffac00,

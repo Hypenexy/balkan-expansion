@@ -1,15 +1,25 @@
 package net.georgidenis.balkanexpansion.item.custom;
 
-import net.minecraft.core.Holder;
+import net.georgidenis.balkanexpansion.item.util.ModToolTiers;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.SwordItem;
-import net.minecraft.world.item.Tiers;
-import net.minecraft.world.item.enchantment.effects.EnchantmentEntityEffect;
+import net.minecraft.world.item.Tier;
 
 
 public class LapisSword extends SwordItem {
 
-    public LapisSword(Tiers tiers, Properties properties) {
-        super(tiers, properties);
+    public LapisSword(Tier tier, Properties properties) {
+        super(tier, properties);
+    }
+
+    @Override
+    public boolean isEnchantable(ItemStack stack) {
+        return true;
+    }
+
+    @Override
+    public int getEnchantmentValue() {
+        return this.getTier().getEnchantmentValue();
     }
 }
