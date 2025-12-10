@@ -1,5 +1,6 @@
 package net.georgidenis.balkanexpansion.entity.custom;
 
+import net.georgidenis.balkanexpansion.item.util.ItemEnchantability;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
@@ -17,9 +18,12 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.item.enchantment.Enchantment;
+import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.level.Level;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.level.gameevent.GameEvent;
+import org.apache.commons.lang3.mutable.Mutable;
 import org.jetbrains.annotations.Nullable;
 
 import static net.minecraft.world.item.Items.BONE;
@@ -121,6 +125,7 @@ public class FriendlySkeleton extends TamableAnimal {
                 if (this.getHealth() < this.getMaxHealth()) {
                     this.heal(5);
                     itemstack.consume(1, player);
+
                     this.gameEvent(GameEvent.EAT);
                     return InteractionResult.sidedSuccess(this.level().isClientSide());
                 }

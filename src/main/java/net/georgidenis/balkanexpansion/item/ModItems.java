@@ -6,16 +6,11 @@ import net.georgidenis.balkanexpansion.item.custom.LapisSword;
 import net.georgidenis.balkanexpansion.item.custom.NecromancerScroll;
 import net.georgidenis.balkanexpansion.item.util.ModToolTiers;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.SpawnEggItem;
-import net.minecraft.world.item.SwordItem;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.common.DeferredSpawnEggItem;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
-import java.util.function.Supplier;
-
-import static net.minecraft.world.item.Tiers.NETHERITE;
 
 public class ModItems {
     // Basically a list of all the items we want to register
@@ -28,17 +23,14 @@ public class ModItems {
     public static final DeferredItem<NecromancerScroll> NECROMANCER_SCROLL = ITEMS.register("necromancer_scroll",
             () -> new NecromancerScroll(new NecromancerScroll.Properties()));
 
-    // Assuming ITEMS is a DeferredRegister<Item>
-    public static final Supplier<LapisSword> LAPIS_SWORD = ITEMS.register("lapis_sword",
+
+    // THE LAPIS SWORD I NEED HELP WITH
+    public static final DeferredItem<LapisSword> LAPIS_SWORD = ITEMS.register("lapis_sword",
             () -> new LapisSword(
-                    ModToolTiers.LAPIS, // Your custom tier
-                    new Item.Properties().attributes(
-                            LapisSword.createAttributes(
-                                    ModToolTiers.LAPIS, // Must match tier above
-                                    1.0f,   // Attack damage bonus
-                                    -1.6f   // Attack speed
-                            )
-                    )
+                    ModToolTiers.LAPIS,
+                    new Item.Properties()
+                            .attributes(LapisSword.createAttributes(
+                                    ModToolTiers.LAPIS, 2, -2f))
             )
     );
 

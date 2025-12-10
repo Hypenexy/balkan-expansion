@@ -8,11 +8,18 @@ import net.minecraft.tags.TagKey;
 public class ModTags {
 
     public static class Blocks {
+        public static final TagKey<Block> NEEDS_LAPIS_TOOL =
+                TagKey.create(
+                        Registries.BLOCK,
+                        ResourceLocation.fromNamespaceAndPath("balkanexpansion", "needs_lapis_tool")
+                );
 
-        public static final TagKey<Block> INCORRECT_FOR_LAPIS =
+        public static final TagKey<Block> INCORRECT_NEEDS_LAPIS =
                 TagKey.create(
                         Registries.BLOCK,
                         ResourceLocation.fromNamespaceAndPath("balkanexpansion", "incorrect_for_lapis")
                 );
     }
+
+
 }
