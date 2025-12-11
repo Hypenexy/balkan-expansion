@@ -15,9 +15,6 @@ import net.georgidenis.balkanexpansion.entity.custom.FriendlySkeleton;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 
-import net.minecraft.world.entity.ai.attributes.DefaultAttributes;
-import net.minecraft.world.entity.ai.attributes.Attributes;
-import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 
 @EventBusSubscriber
 public class ModEventBusEvents {

@@ -12,14 +12,11 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 
 import java.util.function.Supplier;
 
-
+//In here you register entities MANDATORY IF YOU WANT TO SEE THEM IN GAME
 public class ModEntities {
     public static final DeferredRegister<EntityType<?>> ENTITY_TYPES =
             DeferredRegister.create(BuiltInRegistries.ENTITY_TYPE, BalkansExpansion.MOD_ID);
 
-//    public static final Supplier<EntityType<FriendlySkeleton>> FRIENDLY_SKELETON =
-//            ENTITY_TYPES.register("friendly_skeleton", () -> EntityType.Builder.<FriendlySkeleton>of(FriendlySkeleton::new, MobCategory.MONSTER)
-//                    .sized(1f, 2f).build("friendly_skeleton"));
 
     public static final DeferredHolder<EntityType<?>, EntityType<FriendlySkeleton>> FRIENDLY_SKELETON =
             ENTITY_TYPES.register("friendly_skeleton",

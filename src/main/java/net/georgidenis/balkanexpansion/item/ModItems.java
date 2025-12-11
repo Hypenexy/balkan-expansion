@@ -30,7 +30,7 @@ public class ModItems {
                     ModToolTiers.LAPIS,
                     new Item.Properties()
                             .attributes(LapisSword.createAttributes(
-                                    ModToolTiers.LAPIS, 2, -2f))
+                                    ModToolTiers.LAPIS, 4, -2f))
             )
     );
 

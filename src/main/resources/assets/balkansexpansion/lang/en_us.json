@@ -1,6 +1,8 @@
 {
   "item.balkansexpansion.doner": "Döner",
-  "item.balkansexpansion.lapis_sword": "Lapis Sword",
+  "item.balkansexpansion.lapis_sword": "Mycenaen sword",
+  "item.balkansexpansion.lapis_sword.desc": "A sword with unlimited smithing potential.",
+
   "item.balkansexpansion.necromancer_scroll": "Necromancer's Scroll",
   "item.balkansexpansion.friendly_skeleton_spawn_egg": "Friendly Skeleton Egg",
 

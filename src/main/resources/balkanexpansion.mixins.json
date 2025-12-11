@@ -1,12 +1,7 @@
 {
   "required": true,
-  "minVersion": "0.8",
-  "package": "net.georgidenis.balkansexpansion.mixin",
+  "package": "net.georgidenis.balkanexpansion.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
-    "AnvilMenuMixin"
-  ],
-  "injectors": {
-    "defaultRequire": 1
-  }
+  ]
 }
