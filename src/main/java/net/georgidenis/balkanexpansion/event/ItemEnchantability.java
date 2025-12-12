@@ -62,12 +62,6 @@ public class ItemEnchantability {
         // Increase the output level for the lapis sword
         EnchantmentHelper.updateEnchantments(out, ench -> {
             for (var entry : finalRightEnchs.entrySet()) {
-
-                if(increaseNCost[0] <= ench.getLevel(entry.getKey())){
-                    increaseNCost[0] = ench.getLevel(entry.getKey());
-                }
-
-
                 if (ench.getLevel(entry.getKey()) == entry.getIntValue()){
                     ench.set(entry.getKey(),
                             ench.getLevel(entry.getKey()) + 1);
@@ -77,14 +71,14 @@ public class ItemEnchantability {
                             ench.getLevel(entry.getKey()) + entry.getIntValue() - ench.getLevel(entry.getKey()));
 
                 }
-                System.out.println("We got Enchant");
+                increaseNCost[0] += (entry.getIntValue() + ench.getLevel(entry.getKey()));
             }
         });
 
         System.out.println();
         // These 3 lines are all you need:
         event.setOutput(out);
-        event.setCost(increaseNCost[0] * 2);
+        event.setCost(increaseNCost[0]);
         event.setMaterialCost(1);
     }
 }
